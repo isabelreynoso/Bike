@@ -182,7 +182,7 @@ th {
 .sec-component {
   background: wheat;
 }
-.soc-component {
+.sec-component {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -194,9 +194,9 @@ th {
   bottom: 0;
   left: 0;
 }
-.soc-component li {float: left;}
-.soc-component li:not(:first-child) a {margin-left: .75em;}
-.soc-component a {
+.sec-component li {float: left;}
+.sec-component li:not(:first-child) a {margin-left: .75em;}
+.sec-component a {
   display: block;
   color: #aaa;
   font-size: 3em;
