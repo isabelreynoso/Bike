@@ -1,6 +1,6 @@
 // Variables
-darkSalmon: #e9967a;
-softRed: #cd5c5c;
+darkPurple: #4d4dff;
+softBlue: #b3b3ff;
 seaShell: #fff5ee;
 yellow: #ffeb3b;
 wheat: #f5deb3;
@@ -41,8 +41,8 @@ nav {
   float: right;
   width: 5%;/*9.375em;/*150px*/
   min-height: 100%;
-  background: darkSalmon;
-  color: #fff;
+  background: darkPurple;
+  color: #595959;
   overflow: hidden;
   @include transition(width);
 }
@@ -85,7 +85,7 @@ input:checked ~ nav > label + .navigation {display: flex;}
   display: block;
   align-self: center;
   padding: .5em 0;
-  color: #fff;
+  color: #00004d;
   font-size: 1.5em;
   font-weight: bold;
   text-align: center;
@@ -127,7 +127,7 @@ section {
   float: left;
   position: relative;
   background: seaShell;
-  color: darkSalmon;
+  color: darkPurple;
   opacity: 1;
 }
 .sec-home a {
@@ -144,14 +144,14 @@ section {
 }
 /*About*/
 .sec-about {
-  background: softRed;
+  background: softBlue;
   color: tomato;
 }
-.sec-about .content {
+.sec-about .contentabout {
   height: 55%;
   text-align: center;
 }
-/*Portfolio*/
+/*parts*/
 .sec-parts {background: yellow;overflow: hidden;}
 .sec-parts .col-big {
   float: left;
@@ -178,8 +178,8 @@ th {
   text-align: left;
 }
 
-/*Contact*/
-.sec-contact {
+/*component*/
+.sec-component {
   background: wheat;
 }
 .soc-component {
