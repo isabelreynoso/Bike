@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Bike Part 2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>Isabel's Bike</h1>
+  <p>Building my frist bike</p>
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">Isabel's Frame Up build</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="bike.html" target="_blank">what is the bike i want to build</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="parts.html" target="_blank">parts i will be using</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="components.html" target="_blank">components for bike</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>About bike</h2>
+      <h5>Photo of Frame:</h5>
+      <div class="image"><img src="frame.jpg" width="160" height="200" alt="frame" /></div>
+      <p>The StumpJumper is the ulitmie trail bike</p>
+
+      <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+          Basic Parts
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="https://bike.shimano.com/en-US/product/component/deore-xt-m8100/RD-M8100-SGS.html">Rear Derailleur</a>
+          <a class="dropdown-item" href="https://bike.shimano.com/en-US/product/component/deore-xt-m8100/CS-M8100-12.html">Cassette Sprocket</a>
+          <a class="dropdown-item" href="https://bike.shimano.com/en-US/product/component/deore-xt-m8100/BR-M8120.html">Brake (Hydraulic Disc Brake)</a>
+        </div>
+      </div>
+      <p>Quick links to parts</p>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="https://www.specialized.com/us/en/stumpjumper-evo-alloy-29--frameset/p/173499?color=271061-173499&searchText=73319-7102" target="_blank">Frame</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://bike.shimano.com/en-US/product/component/deorext.html" target="_blank">Xt class</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://bike.shimano.com/en-US/product/component/deore-xt-m8100/CS-M8100-12.html" target="_blank"> Hydraulic Disc Brake Lever</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.raceface.com/products/turbine-r-35-wheels" target="_blank">Wheels</a>
+        </li>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8">
+    <div class="container mt-3">
+      <h2>Bike parts</h2>
+      <p>I can use this on my next website:</p>
+      <input class="form-control" id="myInput" type="text" placeholder="Search..">
+      <br>
+      <ul class="list-group" id="myList">
+        <li class="list-group-item">Wheels</a>
+        <li class="list-group-item">Pedals</li>
+        <li class="list-group-item">Fork</li>
+        <li class="list-group-item">Rear shock</li>
+        </ul>
+      </div>
+      <script>
+      $(document).ready(function(){
+        $("#myInput").on("keyup", function() {
+          var value = $(this).val().toLowerCase();
+          $("#myList li").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+      });
+      </script>
+      <h5>I'm want to get all the parts separate</h5>
+      <div class="image"><img src="drivext.jpg" width="350" height="200" alt="drive train"/></div>
+      <p>i also love builing suff, i am doing a frame upbuild to build my perfect bike.</p>
+      <p>i want a more downhill trail bike that isn't hard to climb with like Enduro</p>
+      <br>
+      <h2>Why a StumpJumper?</h2>
+      <h5>This will be my second semeter senior project</h5>
+      <div class="image"><img src="Stumpjumper.jpg" width="350" height="200" alt="bike"/></div>
+      <p>Less is more</p>
+      <p>With the Stumpy as your weapon of choice, you can easily take on long and rough alpine descents, or even sign up for the occasional enduro race, as long as you upgrade the brakes first. However, due to its short reach, it isn’t the most composed bike in the test field either.</p>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Stumpy</p>
+</div>
+<div class="table-responsive">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Frame</th>
+        <th>Wheel</th>
+        <th>Pedals</th>
+        <th>Tire f(29x2.5”) r(29x2.3”)</th>
+        <th>Fork</th>
+        <th>Rear shock</th>
+        <th>Seatpost</th>
+        <th>Rear Derailleur</th>
+        <th>Chain</th>
+        <th>Bottom bracket</th>
+        <th>Cassette sprocket</th>
+        <th>Brake</th>
+        <th>Brake lever (hydraulic disc brake)</th>
+        <th>Rotor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Stump jumper EVO alloy 29 - frameset</td>
+        <td>Mavic Deemax pro limited edition Sam Hill</td>
+        <td>Time Hybrid Link Blue</td>
+        <td>Michelin tbd</td>
+        <td>Fox 36 performance elite all-mountain</td>
+        <td>Fox float DPx2  3-position lever</td>
+        <td>Fox transfer performance elite</td>
+        <td>XT long cage rear derailleur 12-speed</td>
+        <td>XT 12-speed MTB chain</td>
+        <td>deore xt threaded bottom bracket 63/73mm shell width</td>
+        <td>XT 12-speed mtb Cassette sprocket</td>
+        <td>Shimano deore XT hydraulic disc brake 4-piston caliper</td>
+        <td>Shimano deore XT hydraulic disc brake lever I-SPEC EV clamp band</td>
+        <td>Shimano deore XT center lock disc brake rotor 180mm</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+
+</body>
+</html>
